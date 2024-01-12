@@ -1,0 +1,76 @@
+/* Import Work sans font form google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+/* The is the root styles variables  */
+:root {
+    --FF : Work Sans;
+    --TC : #727272;
+}
+/* Global style for the website  */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This is the container  width of the webpage  */
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Common used buttons  */
+.btn {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Styles for header section  */
+
+.header {
+    background: rgba(255, 144, 14, 0.10);
+    height: 1322px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.header nav .logo {
+    color: var(--TC);
+    text-align: center;
+    font-family: var(--FF);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.header nav ul a {
+    color: var(--TC);
+    text-align: center;
+    font-family: var(--FF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    text-decoration: none;
+}
