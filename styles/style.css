@@ -258,8 +258,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 /* Styles for footer section  */
+.footer {
+    margin-top: 100px;
+    background: #FFF4E7;
+    height: 60px;
+}
+.footer h4 {
+    color: var(--TC);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 40px 20px;
+}
 /* Resonsive Design For Mobiles  */
 
 @media screen and (max-width : 576px) {
