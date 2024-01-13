@@ -196,12 +196,68 @@
 .Features .feature-right > div h1 {
     font-size: 4rem;
 }
-/* .Features .feature-left h1 {
+/* Styles for fact section  */
+.fact-section {
+    margin-top: 150px;
 
-} */
+}
+.fact-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.fact-content div {
+    margin: 20px 30px;
+    border: 2px dashed #727272;
+    padding: 15px 30px;
+    text-align: center;
+}
+.fact-section h1 {
+    color: var(--TC);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px 0;
+}
+.fact-section p {
+    color: var(--TC);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; 
+}
+/* Styles for Sponsors section  */
+.Sponsors {
+    margin-top: var(--MT);
+}
+.Sponsors .sponsors-text {
+    text-align: center;
+}
+.Sponsors .sponsors-text h1  {
+    color: var(--TC);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.Sponsors .sponsors-text p {
+    color: var(--TC);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+} 
 
-
-
+.Sponsors .sponsors-icons {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 /* Styles for footer section  */
 /* Resonsive Design For Mobiles  */
@@ -248,6 +304,22 @@
     .Features .feature-right > div {
         display: none;
     } 
+    /* Fact section  */
+    .fact-section {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .fact-content div {
+        margin: 10px;
+    }
+    /* Sponsors section  */
+    .Sponsors .sponsors-icons {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .Sponsors .sponsors-text p {
+        padding: 10px;
+    }
 }
 
 /* Responsive For Tablate Of Small Devices  */
@@ -278,4 +350,8 @@
     .Features .feature-right > div {
         display: none;
     } 
+    /* Sopnsors section  */
+    .Sponsors .sponsors-icons {
+        padding: 20px;
+    }
 }
