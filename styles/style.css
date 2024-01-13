@@ -4,6 +4,7 @@
 :root {
     --FF : Work Sans;
     --TC : #727272;
+    --MT: 70px;
 }
 /* Global style for the website  */
 * {
@@ -108,21 +109,70 @@
     justify-content: center;
     margin-bottom: 30px;
 }
-
 .banner .banner-img img {
     width: 100%;
 }
+/* Styles for main section  */
+/* Styles for main teams area  */
+.main .teams-section {
+    margin-top: var(--MT);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.main .teams-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.main .teams-img img {
+    width: 100%;
+}
 
+.main .teams-text h1 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.main .teams-text h1 .QL {
+    color: var(--TC);
+}
+
+.main .teams-text h1 .FT {
+    color: #FF900E;
+}
+
+.main .teams-text p {
+    color:var(--TC);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+/* Styles for footer section  */
 /* Resonsive Design For Mobiles  */
 
 @media screen and (max-width : 576px) {
+    /* Header section  */
     .header {
         padding: 20px;
+        height: min-content;
     }
     .header nav {
         flex-direction: column;
     }
-    
     .banner .banner-img img {
         width: 100%;
     }
@@ -132,15 +182,38 @@
     .header .banner .banner-text{
         padding: 0;
     } 
+    /* Team section  */
+    .main .teams-section {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .main .teams-img {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        
+    }
 }
 
 /* Responsive For Tablate Of Small Devices  */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
+    /* Header Section  */
     .header {
         padding: 20px;
+        height: min-content;
     }
     .header nav {
         flex-direction: column;
+    }
+    /* Team section  */
+    .main .teams-section {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .main .teams-img {
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
     }
 }
