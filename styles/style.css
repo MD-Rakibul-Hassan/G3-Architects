@@ -10,6 +10,7 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--FF);
 }
 /* This is the container  width of the webpage  */
 .container {
@@ -26,11 +27,11 @@
     background: #FF900E;
     color: #FFF;
     text-align: center;
-    font-family: Work Sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    border: 0;
 }
 
 /* Styles for header section  */
@@ -49,8 +50,7 @@
 .header nav .logo {
     color: var(--TC);
     text-align: center;
-    font-family: var(--FF);
-    font-size: 45px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -67,10 +67,47 @@
 .header nav ul a {
     color: var(--TC);
     text-align: center;
-    font-family: var(--FF);
-    font-size: 18px;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 26px; 
     text-decoration: none;
+}
+.header .banner  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .banner .banner-text {
+    padding-top: 70px;
+}
+.header .banner .banner-text h1 {
+    width: 862px;
+    color: var(--TC);
+    text-align: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 0;
+}
+.header .banner .banner-text p {
+    width: 862px;
+    color: var(--TC);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+}
+.header .banner .banner-text .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner .banner-img img {
+    width: 100%;
 }
